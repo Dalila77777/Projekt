@@ -44,7 +44,7 @@ public class test1 {
         //driver.get("https://outlook.live.com/mail/logoff.owa");
         driver.findElement(By.id("O365_MainLink_Me")).click();
         driver.findElement(By.id("mectrl_body_signOut")).click();
-
+//test
         //driver.quit();
     }
 }
