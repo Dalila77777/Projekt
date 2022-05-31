@@ -16,7 +16,5 @@ public class testmultiple {
         driver.findElement(By.xpath("//input[@value='×']")).click();
         driver.findElement(By.xpath("//input[@value='2']")).click();
         driver.findElement(By.xpath("//input[@value='=']")).click();
-        driver.findElement(By.xpath("//input[@value='AC']")).click();
-        driver.quit();
     }
 }
