@@ -1,14 +1,11 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class test2 {
+public class Calculatorplus {
     public static void main(String[] args) throws IOException {
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Data\\Downloads\\chromedriver_win32\\chromedriver.exe");
         WebDriver driver= new ChromeDriver();
