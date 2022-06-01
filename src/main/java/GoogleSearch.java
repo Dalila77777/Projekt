@@ -18,15 +18,11 @@ public class GoogleSearch {
         driver.get("https://www.google.com/");
         driver.findElement(By.id("L2AGLb")).click();
         WebElement p=driver.findElement(By.name("q"));
-        //enter text with sendKeys() then apply submit()
         p.sendKeys("Selenium Java");
-        // Explicit wait condition for search results
         WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
         w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//ul")));
         p.submit();
         driver.close();
-
-        //driver.findElement(By.className("wM6W7d")).click();
 
     }
 }

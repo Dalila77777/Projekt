@@ -13,13 +13,11 @@ public class testAddToCart {
         WebDriver driver= new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("https://www.skansen.se/sv/");
-        //driver.findElement(By.className("button btn btn-primary")).click();
         driver.get("https://www.skansenbiljett.se/");
         driver.findElement(By.id("startpage_list_ctl01_hlImageLink")).click();
         //Personnummer x är Obligatoriskt (Du behöver ange den istället för x)
         driver.findElement(By.id("ctl00_main_ctl00_ctl00_NewCard_cardHolder_tbxCardHolderPid")).sendKeys("x");
         driver.findElement(By.name("ctl00$main$ctl00$ctl00$NewCard$cardHolder$tbxFirstName")).sendKeys("Förnamn");
-
         driver.findElement(By.name("ctl00$main$ctl00$ctl00$NewCard$cardHolder$tbxLastName")).sendKeys("Efternamn");
         driver.findElement(By.name("ctl00$main$ctl00$ctl00$NewCard$cardHolder$tbxCardHolderAddress")).sendKeys("Gatan 1");
         driver.findElement(By.name("ctl00$main$ctl00$ctl00$NewCard$cardHolder$tbxCardHolderZipCode")).sendKeys("567 65");
